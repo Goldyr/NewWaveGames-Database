@@ -246,9 +246,8 @@ AS
 INSERT INTO DetalleVentas(ID_DV, ID_Venta_DV,  CodJuego_DV, SerieKey_DV, Precio_DV)
 VALUES ((SELECT count(ID_Venta_DV) FROM DetalleVentas)+1, (SELECT TOP 1 ID_V FROM Ventas ORDER BY ID_V DESC), @codjuego, (SELECT TOP 1 Serie_K FROM Keys WHERE CodigoJuego_K=@codjuego AND Estado_K = 1), 
     (select case
-            when Descuento_J=0
-            then PU_J
-            else PU_J*(Descuento_J/100)
+            when Descuento_J = 0 THEN PU_J
+            else  PU_J * (1.00 - Descuento_J/ CAST(100 AS FLOAT))
             end
 from juegos WHERE Codigo_J=@codjuego))
 GO
