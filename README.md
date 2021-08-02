@@ -12,8 +12,8 @@ Hay procedimientos almacenados hechos con la función de ayudar al administrador
 - [@Goldyr](https://github.com/Goldyr)
 - [@sergioriv2](https://github.com/sergioriv2)
 - [@Seb-98](https://github.com/Seb-98)
-- [@matyflory](https://https://github.com/matyflory)
-- [@Facudread24](https://https://github.com/Facudread24)
+- [@matyflory](https://github.com/matyflory)
+- [@Facudread24](https://github.com/Facudread24)
 
   
 ## Appendix
